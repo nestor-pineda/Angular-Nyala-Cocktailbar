@@ -1,4 +1,4 @@
-import { CocktailDetailComponent } from './pages/cocktails/components/cocktail-detail/cocktail-detail.component';
+// import { CocktailDetailComponent } from './pages/cocktails/components/cocktail-detail/cocktail-detail.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
