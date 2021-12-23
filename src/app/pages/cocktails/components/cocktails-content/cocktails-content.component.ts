@@ -19,7 +19,7 @@ export class CocktailsContentComponent implements OnInit {
 
   public RecoverCocktailData() {
     this.httpRequestService.getData(this.URL).subscribe((data: any) => {
-      console.log(data.drinks);
+      console.log(data);
       this.dataInfo = data.drinks;
     });
   }

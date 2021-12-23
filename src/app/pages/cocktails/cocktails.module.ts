@@ -6,9 +6,10 @@ import { CommonModule } from '@angular/common';
 import { CocktailsRoutingModule } from './cocktails-routing.module';
 import { CocktailsContentComponent } from './components/cocktails-content/cocktails-content.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { CocktailDetailComponent } from './components/cocktail-detail/cocktail-detail.component';
 
 @NgModule({
-  declarations: [CocktailsContentComponent],
+  declarations: [CocktailsContentComponent, CocktailDetailComponent],
   imports: [
     CommonModule,
     CocktailsRoutingModule,
