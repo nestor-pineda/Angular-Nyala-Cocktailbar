@@ -1,0 +1,6 @@
+<h1>{{ title }}</h1>
+<div *ngFor="let item of dataInfo">
+  <h3>{{ item.strDrink }}</h3>
+  <img src="{{ item.strDrinkThumb }}" alt="{{ item.strDrink }}" />
+  <p>{{ item.idDrink }}</p>
+</div>
