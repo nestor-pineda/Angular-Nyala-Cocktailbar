@@ -1,14 +1,15 @@
 import { HttpRequestService } from './../../../../shared/services/http-request.service';
 import { Component, OnInit } from '@angular/core';
+
 import { ActivatedRoute } from '@angular/router';
 import { ICocktail } from './../../models/cocktail.interface';
 
 @Component({
-  selector: 'app-cocktail-detail',
-  templateUrl: './cocktail-detail.component.html',
-  styleUrls: ['./cocktail-detail.component.scss'],
+  selector: 'app-detail-content',
+  templateUrl: './detail-content.component.html',
+  styleUrls: ['./detail-content.component.scss'],
 })
-export class CocktailDetailComponent implements OnInit {
+export class DetailContentComponent implements OnInit {
   private URL: string =
     'https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=';
   public dataCocktail: ICocktail = {
