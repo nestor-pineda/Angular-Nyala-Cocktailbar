@@ -1,0 +1,35 @@
+[33mcommit 87ad0f2b0f870c03d48af6fdb58fffdaa05aad55[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Nestor Pineda <nestorpinedaelvira@gmail.com>
+Date:   Thu Dec 23 12:57:02 2021 +0100
+
+    deleated old cocktail-detail component
+
+[33mcommit 36492c2ac790a5d27ff9a31205a0e8b0a63f2da4[m
+Author: Nestor Pineda <nestorpinedaelvira@gmail.com>
+Date:   Thu Dec 23 12:53:20 2021 +0100
+
+    Detail connected with List Shared Component
+
+[33mcommit 1f6fb6e6ca7da4c9d695204b18a6de4b80760b3b[m
+Author: Nestor Pineda <nestorpinedaelvira@gmail.com>
+Date:   Thu Dec 23 10:30:26 2021 +0100
+
+    Cocktail detail Fetch createdinside Cocktail module
+
+[33mcommit d59e73399a02f16dc8b096272749cd8ead68438c[m
+Author: Nestor Pineda <nestorpinedaelvira@gmail.com>
+Date:   Thu Dec 23 09:08:35 2021 +0100
+
+    List shared component created and implemented int coctails page
+
+[33mcommit 9c63db47f1dd38ceedaf1ad8d3020c6bf519ce20[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Nestor Pineda <nestorpinedaelvira@gmail.com>
+Date:   Wed Dec 22 12:46:27 2021 +0100
+
+    Structure ready + API Working
+
+[33mcommit 54f0a29bef2085d789def25898c90beb5e700877[m
+Author: Nestor Pineda <nestorpinedaelvira@gmail.com>
+Date:   Wed Dec 22 11:11:29 2021 +0100
+
+    initial commit
