@@ -15,14 +15,6 @@ const routes: Routes = [
         (module) => module.CocktailsModule
       ),
   },
-
-  /*   {
-    path: `cockail-detail`,
-    loadChildren: () =>
-      import('./pages/cocktail-detail/cocktail-detail.module').then(
-        (module) => module.CocktailDetailModule
-      ),
-  }, */
   {
     path: `cocktails/:idCocktail`,
     loadChildren: () =>
@@ -30,6 +22,15 @@ const routes: Routes = [
         (module) => module.CocktailDetailModule
       ),
   },
+  {
+    path: `more-cocktails`,
+    loadChildren: () =>
+      import('./pages/more-cocktails/more-cocktails.module').then(
+        (module) => module.MoreCocktailsModule
+      ),
+  },
+
+  { path: `reditect`, redirectTo: `home`, pathMatch: 'full' },
 ];
 
 @NgModule({

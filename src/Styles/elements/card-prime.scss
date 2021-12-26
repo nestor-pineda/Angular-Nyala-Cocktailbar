@@ -1,0 +1,19 @@
+// changes for the Prime Card componetn used in List
+.p-card {
+  background: rgb(0, 0, 0, 0);
+  text-align: center;
+  a.card-title {
+    font-family: "Nunito", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f42ee0,
+      0 0 82px #f42ee0, 0 0 92px #f42ee0;
+    transition: text-shadow 275ms ease-in;
+    &:hover {
+      text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f42ee0,
+        0 0 82px #f42ee0, 0 0 92px #f42ee0, 0 0 102px #f42ee0, 0 0 151px #f42ee0;
+    }
+  }
+}

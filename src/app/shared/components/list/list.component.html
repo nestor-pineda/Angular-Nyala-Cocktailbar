@@ -1,7 +1,20 @@
-<h1>{{ title }}</h1>
-<div *ngFor="let item of dataInfo">
+<!-- <h1>{{ title }}</h1> -->
+<!-- <div *ngFor="let item of dataInfo">
   <h3>{{ item.strDrink }}</h3>
   <img src="{{ item.strDrinkThumb }}" alt="{{ item.strDrink }}" />
   <p>{{ item.idDrink }}</p>
   <a href="cocktails/{{ item.idDrink }}">more</a>
+</div> -->
+
+<div class="card-list">
+  <div *ngFor="let item of dataInfo">
+    <p-card [style]="{ width: '360px' }" styleClass="p-card-shadow">
+      <ng-template pTemplate="header">
+        <img src="{{ item.strDrinkThumb }}" alt="{{ item.strDrink }}" />
+      </ng-template>
+      <a class="card-title" href="cocktails/{{ item.idDrink }}">
+        {{ item.strDrink }}
+      </a>
+    </p-card>
+  </div>
 </div>

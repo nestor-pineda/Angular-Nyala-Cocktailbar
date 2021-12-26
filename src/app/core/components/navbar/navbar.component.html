@@ -1,13 +1,15 @@
-<div class="container">
-  <h1 class="neonText">NYALA</h1>
-  <h2 class="neonText2">Cocktail Bar</h2>
-</div>
-
 <nav class="main-nav">
-  <ul>
+  <div class="logo">
+    <h1 class="neonText">NYALA</h1>
+    <h2 class="neonText">Cocktail Bar</h2>
+  </div>
+  <ul class="items">
     <li class="nav-item"><a class="nav-link" [routerLink]="['']">Home</a></li>
     <li class="nav-item">
       <a class="nav-link" [routerLink]="['cocktails']">Cocktails</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['more-cocktails']">More Cocktails</a>
     </li>
   </ul>
 </nav>

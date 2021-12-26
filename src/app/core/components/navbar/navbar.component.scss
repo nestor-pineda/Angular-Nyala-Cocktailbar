@@ -1,19 +1,67 @@
-.neonText {
-  color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
-    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
-}
+nav.main-nav {
+  width: 100vw;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 99;
+  .logo {
+    width: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 60px;
+    h1 {
+      font-family: "Nunito", sans-serif;
+      font-size: 4.2rem;
+      animation: flicker 1.5s infinite alternate;
+      font-weight: 400;
+    }
+    h2 {
+      font-size: 1.8rem;
+      font-family: "Alex Brush", cursive;
+      margin-top: 28px;
+      margin-left: 5px;
+      animation: flicker 1.3s infinite alternate;
+    }
+    .neonText {
+      color: #fff;
+      text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f42ee0,
+        0 0 82px #f42ee0, 0 0 92px #f42ee0, 0 0 102px #f42ee0, 0 0 151px #f42ee0;
+    }
 
-.neonText2 {
-  color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f42ee0,
-    0 0 82px #f42ee0, 0 0 92px #f42ee0, 0 0 102px #f42ee0, 0 0 151px #f42ee0;
-}
+    .neonText2 {
+      color: #fff;
+      text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f42ee0,
+        0 0 82px #f42ee0, 0 0 92px #f42ee0, 0 0 102px #f42ee0, 0 0 151px #f42ee0;
+    }
+  }
+  ul.items {
+    width: 100%;
+    min-width: 400px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 60px;
+    li.nav-item {
+      padding: 30px 15px 0px;
+      a {
+        font-family: "Nunito", sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #fff;
 
-h1 {
-  font-family: "Nunito", sans-serif;
-  font-size: 4.2rem;
-  animation: flicker 1.5s infinite alternate;
+        text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+          0 0 42px #f42ee0, 0 0 82px #f42ee0, 0 0 92px #f42ee0;
+        transition: text-shadow 275ms ease-in;
+        &:hover {
+          text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+            0 0 42px #f42ee0, 0 0 82px #f42ee0, 0 0 92px #f42ee0,
+            0 0 102px #f42ee0, 0 0 151px #f42ee0;
+        }
+      }
+    }
+  }
 }
 
 /* Flickering animation */
@@ -25,8 +73,8 @@ h1 {
   53%,
   57%,
   100% {
-    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,
-      0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f42ee0,
+      0 0 80px #f42ee0, 0 0 90px #f42ee0, 0 0 100px #f42ee0, 0 0 150px #f42ee0;
   }
 
   20%,
@@ -34,21 +82,4 @@ h1 {
   55% {
     text-shadow: none;
   }
-}
-
-/* Additional styling */
-
-h2 {
-  font-size: 1.8rem;
-  // font-family: "Dancing Script", cursive;
-  font-family: "Alex Brush", cursive;
-}
-.container {
-  margin-top: 20vh;
-}
-
-h1,
-h2 {
-  text-align: center;
-  font-weight: 400;
 }

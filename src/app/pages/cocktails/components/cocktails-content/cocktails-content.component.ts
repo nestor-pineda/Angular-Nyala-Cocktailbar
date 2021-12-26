@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CocktailsContentComponent implements OnInit {
   private URL: string =
-    'https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Ordinary_Drink';
+    'https://www.thecocktaildb.com/api/json/v1/1/search.php?f=o';
   public dataInfo: any = []; // aquí meteremos los resultados
   public title: string = 'Best Cocktails';
   constructor(private httpRequestService: HttpRequestService) {}
