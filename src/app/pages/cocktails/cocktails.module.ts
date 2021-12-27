@@ -7,6 +7,9 @@ import { CocktailsRoutingModule } from './cocktails-routing.module';
 import { CocktailsContentComponent } from './components/cocktails-content/cocktails-content.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 
+//Prime
+import { PaginatorModule } from 'primeng/paginator';
+
 @NgModule({
   declarations: [CocktailsContentComponent],
   imports: [
@@ -14,6 +17,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
     CocktailsRoutingModule,
     HttpClientModule,
     SharedModule,
+    PaginatorModule,
   ],
   providers: [HttpRequestService],
 })

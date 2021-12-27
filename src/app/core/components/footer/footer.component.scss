@@ -1,7 +1,45 @@
 footer {
   width: 100vw;
-  height: 500px;
+  height: 400px;
   // background-color: #0b0409;
   background-image: url("../../../../assets/media/images/footer-city2.png");
   background-repeat: no-repeat;
+  background-position: 10% 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .footer-section {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p.intro {
+      font-family: "Alex Brush", cursive;
+      color: white;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+    .social-icons {
+      width: 200px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      color: white;
+      margin-top: 60px;
+      .icon {
+        font-size: 2rem;
+        text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 42px #f42ee0,
+          0 0 82px #f42ee0, 0 0 92px #f42ee0;
+      }
+    }
+    p.copy {
+      font-family: "Nunito", sans-serif;
+      font-size: 1rem;
+      color: white;
+      margin-top: 60px;
+    }
+  }
 }

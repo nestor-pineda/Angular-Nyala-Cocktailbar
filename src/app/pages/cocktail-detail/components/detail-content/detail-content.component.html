@@ -1,5 +1,22 @@
-<p>{{ dataCocktail.idDrink }}</p>
-<p>{{ dataCocktail.strDrink }}</p>
-<p>{{ dataCocktail.strInstructions }}</p>
-<img src="{{ dataCocktail.strDrinkThumb }}" alt="{{ dataCocktail.strDrink }}" />
-<a [routerLink]="['../']">Go Back</a>
+<section class="cocktai-detail">
+  <div class="cocktail-image">
+    <img
+      src="{{ dataCocktail.strDrinkThumb }}"
+      alt="{{ dataCocktail.strDrink }}"
+    />
+  </div>
+  <!-- <p>{{ dataCocktail.idDrink }}</p> -->
+  <div class="col">
+    <div class="description">
+      <h2 class="title">{{ dataCocktail.strDrink }}</h2>
+      <p class="instruction">{{ dataCocktail.strInstructions }}</p>
+      <p class="ingridients">
+        {{ dataCocktail.strIngredient1 }}, {{ dataCocktail.strIngredient2 }},
+        {{ dataCocktail.strIngredient3 }}
+      </p>
+    </div>
+    <div class="back-link">
+      <a [routerLink]="['../']"> Go Back </a>
+    </div>
+  </div>
+</section>

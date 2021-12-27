@@ -1,0 +1,49 @@
+section.cocktai-detail {
+  padding-top: 150px;
+  padding-left: 60px;
+  padding-right: 60px;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  .cocktail-image {
+    width: 45%;
+    min-width: 300px;
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+    min-width: 500px;
+    height: 100%;
+    .description {
+      min-height: 200px;
+      h2.title {
+        color: white;
+        font-size: 2.5rem;
+        font-family: "Nunito", sans-serif;
+      }
+      p.instruction {
+        color: white;
+        font-family: "Nunito", sans-serif;
+        margin-top: 15px;
+      }
+      p.ingridients {
+        color: white;
+        font-family: "Nunito", sans-serif;
+        margin-top: 40px;
+      }
+    }
+    .back-link {
+      height: 30px;
+      display: flex;
+      a {
+        color: white;
+        font-size: 1rem;
+        margin-top: 40px;
+      }
+    }
+  }
+}

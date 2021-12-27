@@ -17,6 +17,9 @@ export class DetailContentComponent implements OnInit {
     strDrink: '',
     strInstructions: '',
     strDrinkThumb: '',
+    strIngredient1: '',
+    strIngredient2: '',
+    strIngredient3: '',
   };
   public cocktailId?: any;
 
