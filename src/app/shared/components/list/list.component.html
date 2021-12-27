@@ -6,7 +6,7 @@
   <a href="cocktails/{{ item.idDrink }}">more</a>
 </div> -->
 
-<div class="card-list">
+<!-- <div class="card-list">
   <div *ngFor="let item of dataInfo">
     <p-card [style]="{ width: '360px' }" styleClass="p-card-shadow">
       <ng-template pTemplate="header">
@@ -17,4 +17,33 @@
       </a>
     </p-card>
   </div>
+</div> -->
+
+<div class="card-list">
+  <div
+    *ngFor="
+      let item of dataInfo
+        | paginate
+          : {
+              id: 'cocktail-pagination',
+              itemsPerPage: 9,
+              currentPage: page,
+              totalItems: totalRecords
+            }
+    "
+  >
+    <p-card [style]="{ width: '360px' }" styleClass="p-card-shadow">
+      <ng-template pTemplate="header">
+        <img src="{{ item.strDrinkThumb }}" alt="{{ item.strDrink }}" />
+      </ng-template>
+      <a class="card-title" href="cocktails/{{ item.idDrink }}">
+        {{ item.strDrink }}
+      </a>
+    </p-card>
+  </div>
 </div>
+
+<pagination-controls
+  id="cocktail-pagination"
+  (pageChange)="page = $event"
+></pagination-controls>

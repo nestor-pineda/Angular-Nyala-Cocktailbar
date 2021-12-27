@@ -8,6 +8,8 @@ import { RouterModule } from '@angular/router';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 
+import { NgxPaginationModule } from 'ngx-pagination';
+
 @NgModule({
   declarations: [ListComponent],
   imports: [
@@ -16,6 +18,7 @@ import { ButtonModule } from 'primeng/button';
     RouterModule,
     CardModule,
     ButtonModule,
+    NgxPaginationModule,
   ],
   exports: [ListComponent],
 })

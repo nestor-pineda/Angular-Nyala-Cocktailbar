@@ -8,6 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ListComponent implements OnInit {
   @Input() public dataInfo!: any;
   @Input() public title!: string;
+  @Input() public page!: number; // pagination
+  @Input() public totalRecords!: number; //pagination
 
   constructor() {}
 
