@@ -1,0 +1,55 @@
+.card-best {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  h3.title-best {
+    color: white;
+    font-size: 1.8rem;
+    font-family: "Nunito", sans-serif;
+  }
+  .neon-bar {
+    height: 2px;
+    width: 100px;
+    background-color: #fff;
+    box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f42ee0,
+      0 0 82px #f42ee0, 0 0 92px #f42ee0, 0 0 102px #f42ee0, 0 0 151px #f42ee0;
+    // background-color: #fff;
+    // box-shadow: 0 0 10px 10px #fff, /* inner white */ 0 0 20px 20px #f0f,
+    //   /* middle magenta */ 0 0 40px 40px #0ff; /* outer cyan */
+  }
+
+  .img-wrapper {
+    width: 300px;
+    height: 360px;
+    overflow: hidden;
+    .drink-img {
+      width: 100%;
+      height: 100%;
+      background: #0b0409 url(../../../../../assets/media/images/video-prev.jpg)
+        center center/cover no-repeat;
+      clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+      transition: all 0.7s ease 0s;
+      &:hover {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  h4.cocktail-best {
+    color: white;
+    font-size: 1.4rem;
+    font-family: "Nunito", sans-serif;
+  }
+  p.ingredients,
+  p.lorem {
+    color: white;
+    font-size: 1rem;
+    font-family: "Nunito", sans-serif;
+  }
+}
