@@ -1,15 +1,27 @@
 <section class="cocktai-detail">
   <div class="cocktail-image">
-    <img
+    <div class="img-wrapper">
+      <div
+        class="drink-img"
+        [ngStyle]="{ 'background-image': 'url(' + dataCocktail.strDrink + ')' }"
+      ></div>
+    </div>
+    <!-- <img
       src="{{ dataCocktail.strDrinkThumb }}"
       alt="{{ dataCocktail.strDrink }}"
-    />
+    /> -->
   </div>
   <!-- <p>{{ dataCocktail.idDrink }}</p> -->
   <div class="col">
     <div class="description">
       <h2 class="title">{{ dataCocktail.strDrink }}</h2>
       <p class="instruction">{{ dataCocktail.strInstructions }}</p>
+      <p class="lorem">
+        Dictumst urna auctor sed tristique quisque ligula eros fermentum mauris,
+        egestas facilisis nullam sodales justo aliquam ultricies ante pulvinar,
+        hendrerit nibh phasellus accumsan quam suscipit in pellentesque.
+        Torquent dui nibh ullamcorper quam odio hac feugiat nullam sollicitudin.
+      </p>
       <p class="ingridients">
         {{ dataCocktail.strIngredient1 }}, {{ dataCocktail.strIngredient2 }},
         {{ dataCocktail.strIngredient3 }}

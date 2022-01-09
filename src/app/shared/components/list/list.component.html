@@ -32,9 +32,15 @@
             }
     "
   >
-    <p-card [style]="{ width: '360px' }" styleClass="p-card-shadow">
+    <p-card [style]="{ width: '300px' }" styleClass="p-card-shadow">
       <ng-template pTemplate="header">
-        <img src="{{ item.strDrinkThumb }}" alt="{{ item.strDrink }}" />
+        <!-- <img src="{{ item.strDrinkThumb }}" alt="{{ item.strDrink }}" /> -->
+        <div class="img-wrapper">
+          <div
+            class="drink-img"
+            [ngStyle]="{ 'background-image': 'url(' + item.strDrinkThumb + ')' }"
+          ></div>
+        </div>
       </ng-template>
       <a class="card-title" href="cocktails/{{ item.idDrink }}">
         {{ item.strDrink }}

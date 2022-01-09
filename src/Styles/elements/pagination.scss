@@ -1,0 +1,47 @@
+//PAgination
+
+ul.ngx-pagination {
+  background-color: rgba(255, 255, 255, 0) !important;
+  text-align: center;
+  margin-top: 30px;
+  li {
+    a {
+      color: #ffffff !important;
+      text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f42ee0,
+        0 0 82px #f42ee0, 0 0 92px #f42ee0;
+      transition: text-shadow 275ms ease-in;
+      &:hover {
+        background: rgba(0, 0, 0, 0);
+        text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+          0 0 42px #f42ee0, 0 0 82px #f42ee0, 0 0 92px #f42ee0,
+          0 0 102px #f42ee0, 0 0 151px #f42ee0;
+        // text-decoration: underline;
+      }
+      span {
+        padding: 0.2rem;
+      }
+    }
+  }
+  li.current {
+    padding: 0.2rem;
+    text-decoration: underline;
+    padding: 0.1875rem 0.7rem !important;
+    background: rgba(0, 0, 0, 0) !important;
+    color: #fefefe !important;
+    border-radius: 50px !important;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f42ee0,
+      0 0 82px #f42ee0, 0 0 92px #f42ee0;
+    transition: text-shadow 275ms ease-in;
+  }
+  li.pagination-next,
+  li.pagination-previous {
+    padding: 0.2rem;
+    padding: 0.1875rem 0.7rem !important;
+    background: rgba(0, 0, 0, 0) !important;
+    color: #fefefe !important;
+    border-radius: 50px !important;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f42ee0,
+      0 0 82px #f42ee0, 0 0 92px #f42ee0;
+    transition: text-shadow 275ms ease-in;
+  }
+}
