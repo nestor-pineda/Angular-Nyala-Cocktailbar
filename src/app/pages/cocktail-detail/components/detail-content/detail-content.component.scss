@@ -7,16 +7,29 @@ section.cocktai-detail {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  .cocktail-image {
-    width: 45%;
-    min-width: 300px;
+  .img-wrapper {
+    width: 400px;
+    height: 460px;
+    overflow: hidden;
+    .drink-img {
+      width: 100%;
+      height: 100%;
+      background: #0b0409 center center/cover no-repeat;
+      clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+      transition: all 0.7s ease 0s;
+      &:hover {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        transform: scale(1.1);
+      }
+    }
   }
   .col {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 45%;
+    width: 50%;
     min-width: 500px;
+    padding-left: 20px;
     height: 100%;
     .description {
       // min-height: 200px;

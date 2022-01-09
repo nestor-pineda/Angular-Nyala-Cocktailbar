@@ -3,9 +3,12 @@
     <div class="img-wrapper">
       <div
         class="drink-img"
-        [ngStyle]="{ 'background-image': 'url(' + dataCocktail.strDrink + ')' }"
+        [ngStyle]="{
+          'background-image': 'url(' + dataCocktail.strDrinkThumb + ')'
+        }"
       ></div>
     </div>
+
     <!-- <img
       src="{{ dataCocktail.strDrinkThumb }}"
       alt="{{ dataCocktail.strDrink }}"
