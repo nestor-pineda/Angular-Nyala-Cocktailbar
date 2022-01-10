@@ -1,73 +1,68 @@
 nav.main-nav {
   width: 100vw;
-  min-height: 120px;
+  height: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: center;
   position: absolute;
   z-index: 99;
-  .logo {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    // margin-left: 60px;
-    h1 {
-      font-family: "Nunito", sans-serif;
-      font-size: 4.2rem;
-      animation: flicker 1.5s infinite alternate;
-      font-weight: 400;
-      text-align: center;
-      margin: 10px 0px 0px 0px;
-    }
-    h2 {
-      font-size: 1.8rem;
-      font-family: "Alex Brush", cursive;
-      // margin-top: 28px;
-      // margin-left: 5px;
-      animation: flicker 1.3s infinite alternate;
-      clear: both;
-      display: inline-block;
-      // overflow: hidden;
-      white-space: nowrap;
-    }
-    .neonText {
-      color: #fff;
-      text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f42ee0,
-        0 0 82px #f42ee0, 0 0 92px #f42ee0, 0 0 102px #f42ee0, 0 0 151px #f42ee0;
-    }
-
-    .neonText2 {
-      color: #fff;
-      text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f42ee0,
-        0 0 82px #f42ee0, 0 0 92px #f42ee0, 0 0 102px #f42ee0, 0 0 151px #f42ee0;
+  padding-top: 25px;
+  a.nav-logo {
+    .logo {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      h1 {
+        font-family: "Nunito", sans-serif;
+        font-size: 3rem;
+        line-height: 3rem;
+        animation: flicker 1.5s infinite alternate;
+        font-weight: 400;
+        text-align: center;
+        margin: 0px;
+      }
+      h2 {
+        font-size: 1.3rem;
+        font-family: "Alex Brush", cursive;
+        // margin-top: 28px;
+        // margin-left: 5px;
+        animation: flicker 1.3s infinite alternate;
+        clear: both;
+        display: inline-block;
+        // overflow: hidden;
+        white-space: nowrap;
+        margin: 0px;
+      }
+      .neonText {
+        color: #fff;
+        text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+          0 0 42px #f42ee0, 0 0 82px #f42ee0, 0 0 92px #f42ee0,
+          0 0 102px #f42ee0, 0 0 151px #f42ee0;
+      }
+      .neonText2 {
+        color: #fff;
+        text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+          0 0 42px #f42ee0, 0 0 82px #f42ee0, 0 0 92px #f42ee0,
+          0 0 102px #f42ee0, 0 0 151px #f42ee0;
+      }
     }
   }
-  ul.items {
-    width: 100%;
-    // min-width: 400px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    // margin-right: 60px;
-    li.nav-item {
-      padding: 20px 0px 0px;
-      a {
-        font-family: "Nunito", sans-serif;
-        text-transform: uppercase;
-        font-weight: 600;
-        color: #fff;
 
-        text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
-          0 0 42px #f42ee0, 0 0 82px #f42ee0, 0 0 92px #f42ee0;
-        transition: text-shadow 275ms ease-in;
-        &:hover {
-          text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
-            0 0 42px #f42ee0, 0 0 82px #f42ee0, 0 0 92px #f42ee0,
-            0 0 102px #f42ee0, 0 0 151px #f42ee0;
-        }
-      }
+  a.nav-link {
+    font-family: "Nunito", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 100px;
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f42ee0,
+      0 0 82px #f42ee0, 0 0 92px #f42ee0;
+    transition: text-shadow 275ms ease-in;
+    &:hover {
+      text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f42ee0,
+        0 0 82px #f42ee0, 0 0 92px #f42ee0, 0 0 102px #f42ee0, 0 0 151px #f42ee0;
     }
   }
 }
@@ -92,9 +87,49 @@ nav.main-nav {
   }
 }
 
-/* @media only screen and (max-width: 600px) {
-  .logo {
-
+@media only screen and (min-width: 750px) {
+  nav.main-nav {
+    padding-top: 35px;
+    a.nav-logo {
+      .logo {
+        padding: 0px 50px;
+        h1 {
+          font-size: 3.5rem;
+          line-height: 3.5rem;
+          margin: 0px;
+        }
+        h2 {
+          font-size: 1.5rem;
+          margin: 0px;
+        }
+      }
+    }
+    a.nav-link {
+      font-size: 1.2rem;
+      margin-top: 23px;
+    }
   }
 }
- */
+
+@media only screen and (min-width: 1100px) {
+  nav.main-nav {
+    a.nav-logo {
+      .logo {
+        padding: 0px 70px;
+        h1 {
+          font-size: 4rem;
+          line-height: 4rem;
+          margin: 0px;
+        }
+        h2 {
+          font-size: 1.8rem;
+          margin: 0px;
+        }
+      }
+    }
+    a.nav-link {
+      font-size: 1.4rem;
+      margin-top: 23px;
+    }
+  }
+}

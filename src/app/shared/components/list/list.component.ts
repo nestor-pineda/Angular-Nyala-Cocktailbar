@@ -10,6 +10,7 @@ export class ListComponent implements OnInit {
   @Input() public title!: string;
   @Input() public page!: number; // pagination
   @Input() public totalRecords!: number; //pagination
+  @Input() public maxSize!: number; //pagination
 
   constructor() {}
 

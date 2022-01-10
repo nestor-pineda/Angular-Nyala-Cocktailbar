@@ -7,6 +7,7 @@
     text-transform: uppercase;
     font-weight: 600;
     color: #fff;
+    font-size: 1.2rem;
 
     text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f42ee0,
       0 0 82px #f42ee0, 0 0 92px #f42ee0;
@@ -14,6 +15,22 @@
     &:hover {
       text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f42ee0,
         0 0 82px #f42ee0, 0 0 92px #f42ee0, 0 0 102px #f42ee0, 0 0 151px #f42ee0;
+    }
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .p-card {
+    a.card-title {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .p-card {
+    a.card-title {
+      font-size: 1.6rem;
     }
   }
 }

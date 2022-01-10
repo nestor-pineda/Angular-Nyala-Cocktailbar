@@ -1,55 +1,181 @@
-.card-best {
-  width: 100%;
-  height: auto;
-  padding: 20px;
-  box-sizing: border-box;
+.best-secction {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  h3.title-best {
-    color: white;
-    font-size: 1.8rem;
-    font-family: "Nunito", sans-serif;
-  }
-  .neon-bar {
-    height: 2px;
-    width: 100px;
-    background-color: #fff;
-    box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f42ee0,
-      0 0 82px #f42ee0, 0 0 92px #f42ee0, 0 0 102px #f42ee0, 0 0 151px #f42ee0;
-    // background-color: #fff;
-    // box-shadow: 0 0 10px 10px #fff, /* inner white */ 0 0 20px 20px #f0f,
-    //   /* middle magenta */ 0 0 40px 40px #0ff; /* outer cyan */
-  }
-
-  .img-wrapper {
-    width: 300px;
-    height: 360px;
-    overflow: hidden;
-    .drink-img {
+  background: rgba(255, 255, 255, 0)
+    url(../../../../../assets/media/images/reverse-intro.png) center top/contain
+    no-repeat;
+  .object {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 30px;
+    .neon-box {
       width: 100%;
-      height: 100%;
-      background: #0b0409 url(../../../../../assets/media/images/video-prev.jpg)
-        center center/cover no-repeat;
-      clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-      transition: all 0.7s ease 0s;
-      &:hover {
-        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-        transform: scale(1.1);
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      h3.title-best {
+        color: white;
+        font-size: 1.8rem;
+        font-family: "Nunito", sans-serif;
+      }
+      .neon-bar {
+        height: 2px;
+        width: 100%;
+        margin: 5px 0px 30px 0px;
+        border-radius: 30px;
+        z-index: 2;
+        background-color: rgb(255, 255, 255) !important;
+      }
+    }
+    .card-best {
+      width: 100%;
+      height: auto;
+      padding: 0px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      .img-wrapper {
+        width: 300px;
+        height: 360px;
+        overflow: hidden;
+        .drink-img {
+          width: 100%;
+          height: 100%;
+          background: url(../../../../../assets/media/images/video-prev.jpg)
+            center center/cover no-repeat;
+          clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+          transition: all 0.7s ease 0s;
+          &:hover {
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+            transform: scale(1.1);
+          }
+        }
+      }
+      .text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        h4.cocktail-best {
+          color: white;
+          font-size: 1.4rem;
+          font-family: "Nunito", sans-serif;
+          margin: 20px 0px 10px 0px;
+        }
+        p.ingredients,
+        p.lorem {
+          color: white;
+          font-size: 1rem;
+          font-family: "Nunito", sans-serif;
+          text-align: center;
+          margin-bottom: 20px;
+        }
       }
     }
   }
+}
 
-  h4.cocktail-best {
-    color: white;
-    font-size: 1.4rem;
-    font-family: "Nunito", sans-serif;
+//Neon effects
+.blue-title {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 30px #0ba9ca,
+    0 0 40px #0ba9ca, 0 0 50px #0ba9ca, 0 0 60px #0ba9ca;
+  z-index: 2;
+}
+
+.blue-bar {
+  -webkit-box-shadow: 0 0 2px #fff, 0 0 5px #0ba9ca, 0 0 10px #0ba9ca,
+    0 0 15px #0ba9ca, 0 0 20px #0ba9ca, 0 0 30px #0ba9ca;
+  box-shadow: 0 0 2px #fff, 0 0 5px #0ba9ca, 0 0 10px #0ba9ca, 0 0 15px #0ba9ca,
+    0 0 20px #0ba9ca, 0 0 30px #0ba9ca;
+}
+
+.green-title {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 30px #0bca14,
+    0 0 40px #0bca14, 0 0 50px #0bca14, 0 0 60px #0bca14;
+  z-index: 2;
+}
+
+.green-bar {
+  -webkit-box-shadow: 0 0 2px #fff, 0 0 5px #0bca14, 0 0 10px #0bca14,
+    0 0 15px #0bca14, 0 0 20px #0bca14, 0 0 30px #0bca14;
+  box-shadow: 0 0 2px #fff, 0 0 5px #0bca14, 0 0 10px #0bca14, 0 0 15px #0bca14,
+    0 0 20px #0bca14, 0 0 30px #0bca14;
+}
+
+@media only screen and (min-width: 750px) {
+  .best-secction {
+    .object {
+      .card-best {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        .text-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          padding-left: 20px;
+          width: 50%;
+          h4.cocktail-best {
+            color: white;
+            font-size: 1.4rem;
+            font-family: "Nunito", sans-serif;
+            margin: 20px 0px 10px 0px;
+          }
+          p.ingredients,
+          p.lorem {
+            color: white;
+            font-size: 1rem;
+            font-family: "Nunito", sans-serif;
+            text-align: left;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
   }
-  p.ingredients,
-  p.lorem {
-    color: white;
-    font-size: 1rem;
-    font-family: "Nunito", sans-serif;
+}
+
+@media only screen and (min-width: 1100px) {
+  .best-secction {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    .object {
+      width: 50%;
+      .card-best {
+        .text-content {
+          padding-left: 20px;
+          h4.cocktail-best {
+            color: white;
+            font-size: 1.4rem;
+            font-family: "Nunito", sans-serif;
+            margin: 20px 0px 10px 0px;
+          }
+          p.ingredients,
+          p.lorem {
+            color: white;
+            font-size: 1rem;
+            font-family: "Nunito", sans-serif;
+            text-align: left;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
   }
 }
