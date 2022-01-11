@@ -14,4 +14,9 @@
   background-color: #ff34ee;
   border: 0.1vw solid #ff6ff3;
   border-radius: 5vw;
+  -webkit-box-shadow: 0 0 2px #fff, 0 0 5px #f42ee0, 0 0 10px #f42ee0,
+    0 0 15px #f42ee0, 0 0 20px #f42ee0, 0 0 30px #f42ee0;
+  box-shadow: 0 0 2px #fff, 0 0 5px #f42ee0, 0 0 10px #f42ee0, 0 0 15px #f42ee0,
+    0 0 20px #f42ee0, 0 0 30px #f42ee0;
+  z-index: 2;
 }
