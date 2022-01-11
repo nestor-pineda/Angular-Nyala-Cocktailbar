@@ -1,15 +1,16 @@
 section.cocktai-detail {
-  padding-top: 150px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-top: 190px;
+  // padding-left: 60px;
+  // padding-right: 60px;
   width: 100vw;
   height: auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
   .img-wrapper {
-    width: 400px;
-    height: 460px;
+    width: 300px;
+    height: 360px;
     overflow: hidden;
     .drink-img {
       width: 100%;
@@ -26,14 +27,19 @@ section.cocktai-detail {
   .col {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 50%;
-    min-width: 500px;
-    padding-left: 20px;
-    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
     .description {
-      // min-height: 200px;
-      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      height: auto;
       h2.title {
         color: white;
         font-size: 2.5rem;
@@ -44,11 +50,12 @@ section.cocktai-detail {
         color: white;
         font-family: "Nunito", sans-serif;
         margin-top: 15px;
+        text-align: center;
       }
       p.ingridients {
         color: white;
         font-family: "Nunito", sans-serif;
-        margin-top: 40px;
+        margin-top: 20px;
       }
     }
     .back-link {
@@ -57,6 +64,76 @@ section.cocktai-detail {
         color: white;
         font-size: 1rem;
         margin-top: 40px;
+        cursor: pointer;
+        font-family: "Nunito", sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+          0 0 42px #f42ee0, 0 0 82px #f42ee0, 0 0 92px #f42ee0;
+        &:hover {
+          text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+            0 0 42px #f42ee0, 0 0 82px #f42ee0, 0 0 92px #f42ee0,
+            0 0 102px #f42ee0, 0 0 151px #f42ee0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  section.cocktai-detail {
+    padding-top: 160px;
+    height: auto;
+    flex-flow: row;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    .img-wrapper {
+      width: 400px;
+      height: 460px;
+    }
+
+    .col {
+      align-items: flex-start;
+      width: 50%;
+      padding: 0px 30px;
+      .description {
+        align-items: flex-start;
+        width: 100%;
+        height: auto;
+        h2.title {
+          line-height: 2.5rem;
+        }
+        p.instruction,
+        p.lorem {
+          text-align: left;
+        }
+      }
+      .back-link {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+}
+section.cocktai-detail {
+  padding-top: 180px;
+  .img-wrapper {
+    width: 400px;
+    height: 460px;
+  }
+  .col {
+    padding: 0px 40px;
+    .description {
+      h2.title {
+        line-height: 2.8rem;
+      }
+      p.instruction,
+      p.lorem {
+        font-size: 1.2rem;
       }
     }
   }
