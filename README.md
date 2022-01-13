@@ -1,6 +1,8 @@
 # Nyala Cocktailbar
 
-![Placeholder Image](https://via.placeholder.com/150)
+[Imgur](https://imgur.com/IXK4Jwi)
+
+![Placeholder Image](https://imgur.com/IXK4Jwi)
 
 I've created what could be a cocktailbar front-end website with Angular 2. I've tryed to mix several concepts like shared components or pagination, with a powerfull responsive styling.
 
